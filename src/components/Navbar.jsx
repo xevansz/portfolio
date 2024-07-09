@@ -52,12 +52,13 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
+          <close /> 
           <p className='text-white text-[26px] lg:text-[36px] font-bold pointer-events-auto cursor-pointer flex'>
             FK
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-col gap-5'>
+        <ul className='list-none hidden sm:flex flex-row gap-5'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
